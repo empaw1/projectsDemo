@@ -33,7 +33,7 @@ delta = datetime.timedelta(days=5)
 final = datetime.date(2022, 5, 25)
 total = 0
 while start_date <= final:
-    subreddit = 'carporn'
+    subreddit = 'space'
     score = 200
 
     # start_epoch=int(dt.datetime(2020, 1, 1).timestamp())
@@ -70,7 +70,7 @@ while start_date <= final:
     reddit = praw.Reddit(
         client_id="4mCP6cVA6Tj91htrOS0c8A",
         client_secret='i2uQiu_Iy2-QAQOfDuNb2e7x1CNUGA',
-        password="goomygoo",
+        password="testaccpass",
         user_agent="Comment Extraction (by u/USERNAME)",
         username="testaccountxd",
     )
@@ -176,7 +176,7 @@ while start_date <= final:
                 # try:
                 #     print(submission.title)
                 # except UnicodeEncodeError:
-                #     print('cant print title xdddddddddddddd')
+                #     print('cant print title')
                 #     pass
                 image = submission.preview
                 imageLink = image['images'][0]['source']['url']
