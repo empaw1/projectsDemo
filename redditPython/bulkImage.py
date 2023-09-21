@@ -119,16 +119,16 @@ for i in range(imageAmount):
       permaLinks.append(permaLink)
 
 #getting last added image number
-if len(os.listdir(r'C:\Users\forry\Desktop\imageGrabber\carporn')) == 0:
+if len(os.listdir(r'C:\Users\forry\Desktop\imageGrabber\space')) == 0:
   startingNumber = 0
 else:
-  list_of_files = glob.glob(r'C:\Users\forry\Desktop\imageGrabber\carporn\*') # * means all if need specific format then *.csv
+  list_of_files = glob.glob(r'C:\Users\forry\Desktop\imageGrabber\space\*') # * means all if need specific format then *.csv
   latest_file = max(list_of_files, key=os.path.getctime)
   startingNumber = int(re.sub('\D', '', latest_file)) + 1
 
 #downloading images
 for i in range(len(titles)):
-    file_name = 'C:\\Users\\forry\\Desktop\\imageGrabber\\carporn\\carporn' + str(i+startingNumber) + '.jpg'
+    file_name = 'C:\\Users\\forry\\Desktop\\imageGrabber\\space\\space' + str(i+startingNumber) + '.jpg'
     res = requests.get(urls[i], stream = True)
 
     if res.status_code == 200:
