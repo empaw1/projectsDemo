@@ -87,7 +87,7 @@ def findMatch():
   pya.hotkey('alt', 'd')#select web address
   time.sleep(.5)
   pya.hotkey('ctrl', 'c')#copy web address
-  time.sleep(3)  # ctrl-c is usually very fast but your program may execute faster
+  time.sleep(3)  #
   pya.hotkey('alt', 'f4')#exit chrome
 
   
@@ -478,7 +478,7 @@ def uploadVideo(playerPosition,regionLetters,highestKDA,finalInfo,enemyNumber,ma
 
   keywords = ['League','of','Legends','League of Legends','gameplay','12.10','patch',str(rank),str(champion),str(enemy),str(regionLetters)]
   #beginning video upload
-  # loggin into the channel
+  # login  channel
   time.sleep(2)
 
   Popen((r'C:\Program Files\Wondershare\Wondershare Filmora\Wondershare Filmora 11.exe',r'C:\Program Files\Wondershare\Wondershare Filmora\video.wfp'),creationflags=subprocess.CREATE_NEW_CONSOLE)
