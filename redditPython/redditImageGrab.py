@@ -57,7 +57,7 @@ imageAmount = 5
 
 payload = {'limit': imageAmount}
 
-res = requests.get('https://oauth.reddit.com/r/carporn/top/?t=day',
+res = requests.get('https://oauth.reddit.com/r/space/top/?t=day',
                    headers=headers, params=payload)
 
 res = res.json()
@@ -75,7 +75,7 @@ for i in range(imageAmount):
 
 #downloading images
 for i in range(imageAmount):
-    file_name = 'C:\\Users\\forry\\Desktop\\imageGrabber\\carporn\\carporn' + str(i) + '.jpg'
+    file_name = 'C:\\Users\\forry\\Desktop\\imageGrabber\\space\\space' + str(i) + '.jpg'
     res = requests.get(urls[i], stream = True)
 
     if res.status_code == 200:
