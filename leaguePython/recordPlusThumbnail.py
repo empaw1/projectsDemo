@@ -180,7 +180,7 @@ def runningReplay(matchNumber,batLetters):
       time.sleep(2)
       emergencyExit = emergencyExit + 1
   
-  #starting match, because fuck black screen
+  #starting match
   time.sleep(1)
   leagueDirector = gw.getWindowsWithTitle('League Director')[0]
   time.sleep(.1)
