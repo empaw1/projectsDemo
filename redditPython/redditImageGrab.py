@@ -26,7 +26,7 @@ import pyperclip as clip
 #integrating sorting features specific to vehicles. will then takes selected parameters and create cookie cutter type short segment videos
 
 CLIENT_ID = '4mCP6cVA6Tj91htrOS0c8A'
-SECRET_KEY = 'i2uQiu_Iy2-QAQOfDuNb2e7x1CNUGA'
+SECRET_KEY = 'i2uy2-QAQOfDuNb2e7x1CNUGA'
 
 
 auth = requests.auth.HTTPBasicAuth(CLIENT_ID, SECRET_KEY)
