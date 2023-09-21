@@ -80,7 +80,7 @@ while start_date <= final:
     results = list(api.search_submissions(
                                 before=end_epoch,
                                 after=start_epoch,
-                                subreddit='carporn',
+                                subreddit='space',
                                 filter=['permalink'],
                                 
                                 
@@ -195,16 +195,16 @@ while start_date <= final:
             ##################
             #getting last added image number
     print('now outside of loop')
-    if len(os.listdir(r'C:\Users\forry\Desktop\imageGrabber\carporn')) == 0:
+    if len(os.listdir(r'C:\Users\forry\Desktop\imageGrabber\space')) == 0:
         startingNumber = 0
     else:
-        list_of_files = glob.glob(r'C:\Users\forry\Desktop\imageGrabber\carporn\*') # * means all if need specific format then *.csv
+        list_of_files = glob.glob(r'C:\Users\forry\Desktop\imageGrabber\space\*') # * means all if need specific format then *.csv
         latest_file = max(list_of_files, key=os.path.getctime)
         startingNumber = int(re.sub('\D', '', latest_file)) + 1
 
     #downloading images
     for i in range(len(titles)):
-        file_name = 'C:\\Users\\forry\\Desktop\\imageGrabber\\carporn\\carporn' + str(i+startingNumber) + '.jpg'
+        file_name = 'C:\\Users\\forry\\Desktop\\imageGrabber\\space\\space' + str(i+startingNumber) + '.jpg'
         res = requests.get(imageUrls[i], stream = True)
 
         if res.status_code == 200:
