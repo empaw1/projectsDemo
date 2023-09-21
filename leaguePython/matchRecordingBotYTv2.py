@@ -88,7 +88,7 @@ def findMatch():
   pya.hotkey('alt', 'd')#select web address
   time.sleep(.5)
   pya.hotkey('ctrl', 'c')#copy web address
-  time.sleep(1)  # ctrl-c is usually very fast but your program may execute faster
+  time.sleep(1)  #
   #pya.hotkey('alt', 'f4')#exit chrome
 
   
