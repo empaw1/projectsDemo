@@ -174,7 +174,7 @@ def runningReplay(matchNumber,batLetters):
       print("match has started, confirming through time")
     elif float(emergencyExit / 60)==1.0:
         
-        print('this is where its fucking up')
+        print('this is where its messing up')
         time.sleep(20)
     else:
       time.sleep(2)
